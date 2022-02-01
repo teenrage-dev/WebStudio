@@ -1,19 +1,9 @@
-.portfolio-list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
 .portfolio-container{
     padding: 20px 24px 20px 24px;
     border: 1px solid var(--first-border-color);
 }
 
 .portfolio-item{
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
     transition: transform 250ms;
 }
 
