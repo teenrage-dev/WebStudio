@@ -1,0 +1,126 @@
+
+.footer{
+    background-color: var(--fifth-text-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-list{
+    display: flex;
+}
+
+.footer-item{
+    align-self: baseline;
+    &:not(:last-child){
+        margin-right: 70px;
+    }
+    &:last-child{
+    margin-left: auto;
+    }
+}
+
+
+.footer .logo{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.address-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer-logo-text,
+.address-link{
+    color: var(--third-text-color);
+    font-family: "Roboto", sans-serif;
+}
+
+address{
+    font-style: inherit;
+}
+
+.address-info {
+    color: var(--sixth-text-color);
+    font-family: "Roboto", sans-serif;
+    transition: color var(--transition);
+    &:hover,
+    &:focus{
+    color: var(--third-text-color);
+    }
+}
+
+.footer-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+    margin-bottom: 20px;
+}
+
+.footer-social-list{
+    display: flex;
+}
+
+.footer-social-item{
+    & + &{
+    margin-left: 10px;
+    }
+}
+
+.footer-item-container .social-link{
+    background-color: var(--first-background-icons-color);
+    color: var(--third-text-color);
+    transition: background-color var(--transition);
+    &:hover,
+    &:focus{
+    background-color: var(--accent-text-color);
+    }
+}
+
+.footer-form{
+    width: 570px;
+}
+
+.subscribe-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-input-email{
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--fifth-border-color);
+    height: 50px;
+    width: 358px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    color: var(--eighth-text-color);
+    transition: border var(--transition);
+    outline: none;
+    &:hover,
+    &:focus{
+    border: 1px solid var(--accent-text-color);
+    }
+    &::placeholder{
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--eighth-text-color);
+    }
+}
+
+
+.footer-form .hero-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.footer-icon-subscribe{
+    margin-left: 10px;
+    fill: var(--third-text-color);
+}

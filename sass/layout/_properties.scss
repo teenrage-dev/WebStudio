@@ -1,0 +1,38 @@
+
+.properties-list{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.properties-item{
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.properties-item-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background-color: var(--first-background);
+    border-radius: 4px;
+}
+
+.properties-item-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--first-text-color);
+}
+
+.properties-item-text{
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+}
