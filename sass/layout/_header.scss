@@ -2,34 +2,33 @@ header{
     border-bottom: 1px solid var(--second-border-color);
 }
 
-
-
-.header-container .logo{
+.header__logo{
     margin-right: 93px;
 }
 
-.header-logo-text{
+.header__logo-text{
     color:var(--second-text-color);
 }
 
-.header-container{
+.header__container{
     display: flex;
     align-items: center;
 }
 
-.header-item:not(:last-child),
-.contacts-item:not(:last-child){
+.site-list__item:not(:last-child),
+.contacts-list__item:not(:last-child){
     margin-right: 50px;
 }
 
-.header-list{
+.site-list{
     display: flex;
     padding-top: 31px;
     padding-bottom: 31px;
     color: var(--first-text-color);
 }
 
-.header-link{
+.site-list__link,
+.contacts-list__link{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.14;
@@ -66,7 +65,7 @@ header{
     margin-left: auto;
 }
 
-.contacts-item-container{
+.contacts-list__container{
     fill: currentColor;
     margin-right: 10px;
     display: flex;

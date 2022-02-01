@@ -1,32 +1,32 @@
-.portfolio-container{
+.portfolio-list__container{
     padding: 20px 24px 20px 24px;
     border: 1px solid var(--first-border-color);
 }
 
-.portfolio-item{
+.portfolio-list__item{
     transition: transform 250ms;
 }
 
 
-.portfolio-item-link{
+.portfolio-list__link{
     display: inline-block;
     transition: box-shadow 250ms;
     &:hover,
     &:focus{
     box-shadow: var(--fourth-box-shadow);
     }
-    &:hover .portfolio-img-text,
-    &:focus .portfolio-img-text{
+    &:hover .portfolio-list__img-text,
+    &:focus .portfolio-list__img-text{
     transform: translateY(0);
     }
 }
 
-.portfolio-item-wrap{
+.portfolio-list__wrap{
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-img-text{
+.portfolio-list__img-text{
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@
     color: var(--third-text-color);
 }
 
-.portfolio-item-title{
+.portfolio-list__title{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -51,7 +51,7 @@
     color: var(--first-text-color);
 }
 
-.portfolio-item-text{
+.portfolio-list__text{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.87;

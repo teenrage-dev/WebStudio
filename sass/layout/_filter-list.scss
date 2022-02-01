@@ -1,10 +1,11 @@
+
 .filter-list{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    padding-bottom: 50px;
 }
 
-.buttons{
+.filter-list__buttons{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -23,13 +24,13 @@
     }
 }
 
-.current-btn{
+.filter-list__current-btn{
     background-color: var(--accent-text-color);
     color: var(--third-text-color);
     box-shadow: var(--second-box-shadow);
     }
 
 
-.filter-item:not(:last-child){
+.filter-list__item:not(:last-child){
     margin-right: 8px;
 }

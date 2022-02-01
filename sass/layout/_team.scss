@@ -3,37 +3,36 @@
     --card-item: 4;
 }
 
-.team-item{
+.team-list__item{
     background-color: var(--third-text-color);
     box-shadow: var(--first-box-shadow);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-item-content{
+.team-list__content{
     padding-top: 30px;
     padding-bottom: 30px
 }
 
-.team-item-title{
+.team-list__title{
     font-weight: 500;
     color: var(--first-text-color);
     margin-bottom: 10px;
 }
 
-.team-item-text{
+.team-list__text{
     margin-bottom: 16px;
 }
 
-.team-item-title,
-.team-item-text{
+.team-list__title,
+.team-list__text{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
 
-
-.team-item-content .social-link{
+.team-list__content .social-link{
     background-color: var(--third-text-color);
     color: var(--icons-color);
     transition: background-color var(--transition), color var(--transition);

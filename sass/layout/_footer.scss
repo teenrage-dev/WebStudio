@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.footer-item{
+.footer-list__item{
     align-self: baseline;
     &:not(:last-child){
         margin-right: 70px;
@@ -20,17 +20,17 @@
 }
 
 
-.footer .logo{
+.footer-logo{
     margin-bottom: 20px;
     display: block;
 }
 
-.address-item:not(:last-child){
+.address-list__item:not(:last-child){
     margin-bottom: 9px;
 }
 
-.footer-logo-text,
-.address-link{
+.footer-list__text,
+.address-list__link{
     color: var(--third-text-color);
     font-family: "Roboto", sans-serif;
 }
@@ -39,7 +39,7 @@ address{
     font-style: inherit;
 }
 
-.address-info {
+.address-list__info {
     color: var(--sixth-text-color);
     font-family: "Roboto", sans-serif;
     transition: color var(--transition);
@@ -49,7 +49,7 @@ address{
     }
 }
 
-.footer-title{
+.footer-list__title{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -59,17 +59,8 @@ address{
     margin-bottom: 20px;
 }
 
-.footer-social-list{
-    display: flex;
-}
 
-.footer-social-item{
-    & + &{
-    margin-left: 10px;
-    }
-}
-
-.footer-item-container .social-link{
+.footer-list__container .social-link{
     background-color: var(--first-background-icons-color);
     color: var(--third-text-color);
     transition: background-color var(--transition);
@@ -89,7 +80,7 @@ address{
     align-items: center;
 }
 
-.footer-input-email{
+.footer-form__input-email{
     display: inline-block;
     background-color: transparent;
     border: 1px solid var(--fifth-border-color);
@@ -113,14 +104,14 @@ address{
 }
 
 
-.footer-form .hero-button{
+.footer-form .hero__button{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
 }
 
-.footer-icon-subscribe{
+.footer-form__icon-subscribe{
     margin-left: 10px;
     fill: var(--third-text-color);
 }
