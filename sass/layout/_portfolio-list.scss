@@ -1,3 +1,12 @@
+.portfolio-list{
+    @media screen and (min-width: 768px) {
+        --card-item: 2;
+    }
+    @media screen and (min-width: 1200px) {
+        --card-item: 3;
+    }
+}
+
 .portfolio-list__container{
     padding: 20px 24px 20px 24px;
     border: 1px solid var(--first-border-color);

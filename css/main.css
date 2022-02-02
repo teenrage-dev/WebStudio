@@ -89,18 +89,39 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .social-list {
@@ -324,24 +345,41 @@ img {
 .section-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   margin-bottom: 50px;
   color: var(--first-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-top: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .card-set-item {
-  width: calc(100% / var(--card-item) - 30px);
-  margin-left: 30px;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set-item {
+    width: calc(100% / var(--card-item) - 30px);
+    margin-left: 30px;
+  }
 }
 
 header {
@@ -467,7 +505,18 @@ header {
 
 .properties-list {
   text-align: left;
-  --card-item: 4;
+}
+
+@media screen and (min-width: 768px) {
+  .properties-list {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .properties-list {
+    --card-item: 4;
+  }
 }
 
 .properties-list__container {
@@ -477,7 +526,6 @@ header {
   padding-bottom: 25px;
   margin-bottom: 30px;
   background-color: var(--first-background);
-  border-radius: 4px;
 }
 
 .properties-list__title {
@@ -520,7 +568,18 @@ header {
 
 .team {
   background-color: var(--first-background);
-  --card-item: 4;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    --card-item: 4;
+  }
 }
 
 .team-list__item {
@@ -565,7 +624,34 @@ header {
 
 .clients-list {
   justify-content: center;
-  --card-item: 6;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    --card-item: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    --card-item: 6;
+  }
+}
+
+.clients-list__item {
+  width: calc(100% / var(--card-item) - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .clients-list__link {
@@ -709,8 +795,25 @@ address {
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+  width: 362px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    padding-bottom: 50px;
+  }
 }
 
 .filter-list__buttons {
@@ -740,6 +843,18 @@ address {
 
 .filter-list__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    --card-item: 3;
+  }
 }
 
 .portfolio-list__container {
