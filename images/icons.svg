@@ -120,4 +120,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10" id="check-icon">
     <path d="m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z" stroke="#fff" stroke-width=".2"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" id="mobile_menu_open">
+    <path clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"></path>
+  </symbol>
 </svg>

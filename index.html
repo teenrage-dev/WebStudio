@@ -27,7 +27,7 @@
                 <li class="contacts-list__item">
                         <a href="mailto:info@devstudio.com" lang="en" class="link contacts-list__link">
                         <span  class="contacts-list__container">
-                            <svg class=".contacts-list__icon" width="16" height="12">
+                            <svg class="contacts-list__icon" width="16" height="12" @media screen and (min-width: 768px){width="14" height="10"}>
                                 <use href="./images/icons.svg#contacts-icon-1"></use>
                             </svg>
                         </span>
@@ -37,7 +37,7 @@
                 <li class="contacts-list__item">
                     <a href="tel:+380961111111" class="link contacts-list__link">
                     <span  class="contacts-list__container">
-                        <svg class=".contacts-list__icon" width="10" height="16">
+                        <svg class="contacts-list__icon" width="10" height="16">
                             <use href="./images/icons.svg#contacts-icon-2"></use>
                         </svg>
                     </span>
@@ -46,6 +46,11 @@
                     
                 </li>
             </ul>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="menu-open-btn__icon" width="24" height="16">
+                    <use href="./images/icons.svg#mobile_menu_open"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -489,5 +494,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
