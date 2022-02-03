@@ -17,12 +17,15 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     box-shadow: var(--fifth-box-shadow);
     border-radius: 4px;
     background-color: var(--third-text-color);
     padding: 40px;
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal__close {
@@ -57,7 +60,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--first-text-color);
     margin-bottom: 12px;
@@ -66,7 +69,7 @@
 .modal-form__input-text {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
     display: block;
@@ -145,11 +148,17 @@
 .modal-form__chekbox-text {
     position: relative;
     font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 1.16;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .input-checkbox-wraper {

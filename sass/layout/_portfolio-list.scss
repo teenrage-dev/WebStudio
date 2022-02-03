@@ -13,6 +13,10 @@
 }
 
 .portfolio-list__item{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
     transition: transform 250ms;
 }
 
@@ -27,6 +31,15 @@
     &:hover .portfolio-list__img-text,
     &:focus .portfolio-list__img-text{
     transform: translateY(0);
+    }
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px;
     }
 }
 

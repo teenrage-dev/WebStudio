@@ -3,19 +3,45 @@
     background-color: var(--fifth-text-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        
+    }
 }
 
 .footer-list{
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: unset;
+    }
 }
 
 .footer-list__item{
-    align-self: baseline;
     &:not(:last-child){
-        margin-right: 70px;
+        margin-bottom: 60px;
     }
-    &:last-child{
-    margin-left: auto;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        &:last-child{
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        align-self: baseline;
+        &:not(:last-child){
+            margin-right: 70px;
+            margin-bottom: 0;
+        }
+        &:last-child{
+            margin-left: 23px;
+            margin-right: 0;
+        }
+        text-align: left;
     }
 }
 
@@ -71,13 +97,22 @@ address{
 }
 
 .footer-form{
-    width: 570px;
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        max-width: 570px;
+    }
 }
 
 .subscribe-field{
+    @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    }
 }
 
 .footer-form__input-email{
@@ -85,9 +120,9 @@ address{
     background-color: transparent;
     border: 1px solid var(--fifth-border-color);
     height: 50px;
-    width: 358px;
+    width: 100%;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     color: var(--eighth-text-color);
     transition: border var(--transition);
     outline: none;
@@ -101,6 +136,11 @@ address{
         line-height: 1.25;
         color: var(--eighth-text-color);
     }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -109,6 +149,10 @@ address{
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .footer-form__icon-subscribe{
