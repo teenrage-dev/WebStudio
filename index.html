@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
@@ -27,8 +26,11 @@
                 <li class="contacts-list__item">
                         <a href="mailto:info@devstudio.com" lang="en" class="link contacts-list__link">
                         <span  class="contacts-list__container">
-                            <svg class="contacts-list__icon" width="16" height="12" @media screen and (min-width: 768px){width="14" height="10"}>
+                            <svg class="contacts-list__icon" width="16" height="12">
                                 <use href="./images/icons.svg#contacts-icon-1"></use>
+                            </svg>
+                            <svg class="contacts-list__icon-tab" width="14" height="10">
+                                <use href="./images/icons.svg#contacts-icon-tab-1"></use>
                             </svg>
                         </span>
                         info@devstudio.com
@@ -40,6 +42,9 @@
                         <svg class="contacts-list__icon" width="10" height="16">
                             <use href="./images/icons.svg#contacts-icon-2"></use>
                         </svg>
+                        <svg class="contacts-list__icon-tab" width="10" height="14">
+                            <use href="./images/icons.svg#contacts-icon-tab-2"></use>
+                        </svg>
                     </span>
                         +38 096 111 11 11
                         </a>
@@ -47,7 +52,7 @@
                 </li>
             </ul>
             <button type="button" class="menu-open-btn" data-menu-open>
-                <svg class="menu-open-btn__icon" width="24" height="16">
+                <svg class="menu-open-btn__icon" width="40" height="40">
                     <use href="./images/icons.svg#mobile_menu_open"></use>
                 </svg>
             </button>
