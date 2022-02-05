@@ -4,7 +4,7 @@ header{
 
 .header__logo{
     margin-right: 88px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-right: 0;
     }
     @media screen and (min-width: 1200px) {
@@ -18,11 +18,11 @@ header{
 
 .header__container{
     display: flex;
-    align-items: center;
-    @media screen and (max-width: 768px)  {
+    align-items: center; 
+    @media screen and (max-width: 767px)  {
+        padding-top: 16px;
+        padding-bottom: 16px;
         position: relative;
-        padding-top: 10px;
-        padding-bottom: 10px;
         width: 100vw;
     }
 }
@@ -31,7 +31,7 @@ header{
     @media screen and (min-width: 1200px)  {
         margin-right: 0;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         position: absolute;
         white-space: nowrap;
         width: 1px;
@@ -88,9 +88,8 @@ header{
     }
 }
 
-
 .contacts-list{
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         position: absolute;
         white-space: nowrap;
         width: 1px;
@@ -148,7 +147,7 @@ header{
 }
 
 .contacts-list__icon{
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         position: absolute;
         white-space: nowrap;
         width: 1px;
@@ -163,7 +162,7 @@ header{
 }
 
 .contacts-list__icon-tab{
-    @media screen and (min-width: 1201px) {
+    @media screen and (min-width: 1200px) {
         position: absolute;
         white-space: nowrap;
         width: 1px;
