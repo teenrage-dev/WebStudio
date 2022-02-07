@@ -12,6 +12,14 @@
     background-color: var(--third-text-color);
     box-shadow: var(--first-box-shadow);
     border-radius: 0px 0px 4px 4px;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        &:not(:last-child){
+            margin-bottom: 0;
+        }
+    }
 }
 
 .team-list__content{

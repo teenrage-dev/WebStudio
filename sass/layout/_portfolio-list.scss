@@ -1,4 +1,11 @@
 .portfolio-list{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: -30px;
+        margin-top: -30px;
+        --card-item: 1;
+    }
     @media screen and (min-width: 768px) {
         --card-item: 2;
     }
@@ -14,6 +21,9 @@
 
 .portfolio-list__item{
     @media screen and (max-width: 768px) {
+        width: calc(100% / var(--card-item) - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
         display: flex;
         justify-content: center;
     }
@@ -32,8 +42,10 @@
     &:focus .portfolio-list__img-text{
     transform: translateY(0);
     }
-    @media screen and (min-width: 480px) {
-        width: 450px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     @media screen and (min-width: 768px) {
         width: 354px;
