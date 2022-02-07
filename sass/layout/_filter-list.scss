@@ -5,11 +5,13 @@
     justify-content: flex-start;
     padding-bottom: 40px;
     max-width: 362px;
+    width: 100%;
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
         justify-content: center;
         padding-bottom: 30px;
         width: 100%;
+        max-width: 100%;
     }
     @media screen and (min-width: 1200px) {
         padding-bottom: 50px;
