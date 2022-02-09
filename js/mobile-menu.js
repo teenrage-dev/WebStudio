@@ -20,6 +20,11 @@
       !refs.menu.classList.contains("is-hidden") ? refs.menu.classList.add("is-hidden") : "";
       refs.body.classList.contains("no-scroll") && refs.modal.classList.contains("is-hidden") ? refs.body.classList.remove("no-scroll") : "";
     }
+    if (refs.modal) {
+      refs.body.classList.contains("no-scroll") && refs.modal.classList.contains("is-hidden") ? refs.body.classList.remove("no-scroll") : "";
+    } else {
+    refs.body.classList.contains("no-scroll") ? refs.body.classList.remove("no-scroll") : "";
+    }
   })
 })();
   
