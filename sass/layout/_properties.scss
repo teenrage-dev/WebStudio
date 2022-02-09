@@ -1,22 +1,11 @@
 .properties-list{
+    --card-item: 1;
     text-align: left;
     @media screen and (min-width: 768px) {
         --card-item: 2;
     }
     @media screen and (min-width: 1200px) {
         --card-item: 4;
-    }
-}
-
-.properties-list__item{
-    @media screen and (min-width: 480px) {
-        width: 450px;
-    }
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 270px;
     }
 }
 
@@ -37,9 +26,4 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     color: var(--first-text-color);
-}
-
-.properties-list__text{
-    text-align: left;
-    font-family: "Roboto", sans-serif;
 }

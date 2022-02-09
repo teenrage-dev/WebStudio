@@ -62,14 +62,11 @@
                     <use href="./images/icons.svg#mob_menu_close_btn"></use>
                 </svg>
             </button>
-            <div class="mob-menu__container">
-                <div class="mob-menu__about">
                     <ul class="mob-menu-about-list list">
                         <li class="mob-menu-about-list__item"><a href="./index.html" class="link mob-menu-about-list__link site-list__link-active">Студия</a></li>
                         <li class="mob-menu-about-list__item"><a href="./portfolio.html" class="link mob-menu-about-list__link">Портфолио</a></li>
                         <li class="mob-menu-about-list__item"><a href="/" class="link mob-menu-about-list__link">Контакты</a></li>
                     </ul>
-                </div>
                 <div class="mob-menu__contacts">
                     <ul class="mob-menu-contacts-list list">
                         <li class="mob-menu-contacts-list__item">
@@ -106,7 +103,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </div>
     </header>
     <main>
@@ -168,13 +164,24 @@
                 <ul class="list doing-list card-set">
                     <li class="doing-list__item card-set-item">
                         <div class="doing-list__wrap">
-                            <img 
-                            srcset="./images/doing-img-1-1x.jpg 1x,
-                            ./images/doing-img-1-2x.jpg 2x"
-                            src="./images/doing-img-1.jpg" 
-                            alt="Разработка сайту на ноутбуке" 
-                            width="370" height="294"
-                            >
+                            <picture>
+                                <source
+                                srcset="./images/doing-img-1-1x.jpg 1x,
+                                ./images/doing-img-1-2x.jpg 2x"
+                                type="image/jpeg"
+                                >
+                                <source
+                                srcset="./images/doing-img-1-1x.webp 1x,
+                                ./images/doing-img-1-2x.webp 2x"
+                                type="image/webp"
+                                >
+                                <img 
+                                src="./images/doing-img-1-1x.jpg" 
+                                alt="Разработка сайту на ноутбуке" 
+                                width="370" height="294"
+                                loading="lazy"
+                                >
+                            </picture>
                                     <p class="doing-list__text">
                                         Десктопные приложения
                                     </p>
@@ -182,14 +189,25 @@
                     </li>
                     <li class="doing-list__item card-set-item">
                         <div class="doing-list__wrap">
-                            <img 
-                            srcset="./images/doing-img-2-1x.jpg 1x,
-                            ./images/doing-img-2-2x.jpg 2x"
-                            src="./images/doing-img-2.jpg" 
-                            alt="Разработка дизайна мобильного приложения" 
-                            width="370" 
-                            height="294"
-                            >
+                            <picture>
+                                <source
+                                srcset="./images/doing-img-2-1x.jpg 1x,
+                                ./images/doing-img-2-2x.jpg 2x"
+                                type="image/jpeg"
+                                >
+                                <source
+                                srcset="./images/doing-img-2-1x.webp 1x,
+                                ./images/doing-img-2-2x.webp 2x"
+                                type="image/webp"
+                                >
+                                <img
+                                src="./images/doing-img-2-1x.jpg" 
+                                alt="Разработка дизайна мобильного приложения" 
+                                width="370" 
+                                height="294"
+                                loading="lazy"
+                                >
+                            </picture>
                                     <p class="doing-list__text">
                                         Мобильные приложения
                                     </p>
@@ -197,14 +215,25 @@
                     </li>
                     <li class="doing-list__item card-set-item">
                         <div class="doing-list__wrap">
-                            <img 
-                            srcset="./images/doing-img-3-1x.jpg 1x,
-                            ./images/doing-img-3-2x.jpg 2x"
-                            src="./images/doing-img-3.jpg" 
-                            alt="Подбор цветового решения" 
-                            width="370" 
-                            height="294"
-                            >
+                            <picture>
+                                <source
+                                srcset="./images/doing-img-3-1x.jpg 1x,
+                                ./images/doing-img-3-2x.jpg 2x"
+                                type="image/jpeg"
+                                >
+                                <source
+                                srcset="./images/doing-img-3-1x.webp 1x,
+                                ./images/doing-img-3-2x.webp 2x"
+                                type="image/webp"
+                                >
+                                <img 
+                                src="./images/doing-img-3-1x.jpg" 
+                                alt="Подбор цветового решения" 
+                                width="370" 
+                                height="294"
+                                loading="lazy"
+                                >
+                            </picture>
                                 <p class="doing-list__text">
                                     Дизайнерские решения
                                 </p>

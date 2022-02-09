@@ -1,4 +1,5 @@
 .team{
+    --card-item: 1;
     background-color: var(--first-background);
     @media screen and (min-width: 768px) {
         --card-item: 2;
@@ -12,14 +13,6 @@
     background-color: var(--third-text-color);
     box-shadow: var(--first-box-shadow);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child){
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-        &:not(:last-child){
-            margin-bottom: 0;
-        }
-    }
 }
 
 .team-list__content{
@@ -39,7 +32,6 @@
 
 .team-list__title,
 .team-list__text{
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
